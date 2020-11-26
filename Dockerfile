@@ -2,7 +2,7 @@
 FROM ubuntu:focal
 
 #update repositories and upgrade dependencies
-RUN apt update && sudo apt upgrade -y
+RUN apt update && apt upgrade -y
 RUN apt install -y git neofetch make python build-essential nodejs npm sudo
 
 #copy the entire source
