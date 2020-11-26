@@ -1,5 +1,5 @@
-#inherit debian docker
-FROM debian:buster
+#inherit debian node docker
+FROM node:current-buster
 
 #locales ref:- https://hub.docker.com/_/debian
 RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* \
