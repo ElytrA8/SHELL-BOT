@@ -1,14 +1,17 @@
-#inherit debian node docker
-FROM node:current-buster
+#inherit fedora docker
+FROM fedora:latest
 
-#locales ref:- https://hub.docker.com/_/debian
-RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* \
-    && localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
-ENV LANG en_US.utf8
 
 #update repositories and upgrade dependencies
-RUN apt update
-RUN apt install -y bash git neofetch make python build-essential nodejs npm sudo
+RUN dnf update
+RUN dnf install -y bash \
+                   git \
+                   neofetch \
+                   make \
+                   python \
+                   build-essential \
+                   nodejs \
+                   sudo
 
 #copy the entire source
 COPY . .
