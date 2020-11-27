@@ -3,7 +3,7 @@ FROM fedora:latest
 
 
 #update repositories and upgrade dependencies
-RUN dnf update
+RUN dnf upgrade -y
 RUN dnf install -y bash \
                    git \
                    neofetch \
