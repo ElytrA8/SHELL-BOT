@@ -9,7 +9,11 @@ RUN dnf install -y bash \
                    neofetch \
                    make \
                    python \
-                   build-essential \
+                   make \
+                   automake \
+                   gcc \
+                   gcc-c++ \
+                   kernel-devel \
                    nodejs \
                    sudo
 
