@@ -14,7 +14,6 @@ ENV TZ=Asia/Kolkata
 RUN apt update
 RUN apt install -y --no-install-recommends apt-utils \
                                            automake \
-                                           bash \
                                            build-essential \
                                            curl \
                                            git \
@@ -22,6 +21,7 @@ RUN apt install -y --no-install-recommends apt-utils \
                                            nodejs \
                                            npm \
                                            make \
+                                           musl-gcc \
                                            python \
                                            make \
                                            gcc \
