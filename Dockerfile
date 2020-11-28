@@ -12,22 +12,21 @@ ENV TZ=Asia/Kolkata
 
 #update repositories and upgrade dependencies
 RUN apt update
-RUN apt install -y --no-install-recommends apt-utils \
-                                           automake \
-                                           build-essential \
-                                           curl \
-                                           git \
-                                           neofetch \
-                                           nodejs \
-                                           npm \
-                                           make \
-                                           musl-gcc \
-                                           python \
-                                           make \
-                                           gcc \
-                                           g++ \
-                                           sudo \
-                                           wget
+RUN apt install -y apt-utils \
+                   automake \
+                   build-essential \
+                   curl \
+                   git \
+                   neofetch \
+                   nodejs \
+                   npm \
+                   make \
+                   python \
+                   make \
+                   gcc \
+                   g++ \
+                   sudo \
+                   wget
 
 #copy the entire source
 COPY . .
