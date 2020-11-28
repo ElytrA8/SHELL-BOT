@@ -1,21 +1,22 @@
-#inherit fedora docker
-FROM fedora:latest
+#inherit alpine docker
+FROM node:alpine3.10
 
 
 #update repositories and upgrade dependencies
-RUN dnf upgrade -y
-RUN dnf install -y bash \
-                   git \
-                   neofetch \
-                   make \
-                   python \
-                   make \
-                   automake \
-                   gcc \
-                   gcc-c++ \
-                   kernel-devel \
-                   nodejs \
-                   sudo
+RUN apk update
+RUN apk add -y bash \
+               curl \
+               git \
+               neofetch \
+               make \
+               python \
+               make \
+               automake \
+               gcc \
+               g++ \
+               linux-headers \
+               sudo \
+               wget
 
 #copy the entire source
 COPY . .
