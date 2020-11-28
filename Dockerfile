@@ -9,7 +9,6 @@ ENV LANG en_US.utf8
 #timezone hack
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Kolkata
-RUN apt-get install -y tzdata
 
 #update repositories and upgrade dependencies
 RUN apt update
