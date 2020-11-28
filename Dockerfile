@@ -22,7 +22,6 @@ RUN apt install -y --no-install-recommends apt-utils \
                                            make \
                                            gcc \
                                            g++ \
-                                           linux-headers \
                                            sudo \
                                            wget
 
