@@ -4,7 +4,7 @@ FROM archlinux:latest
 #update repositories and upgrade dependencies
 RUN pacman -Syy
 RUN pacman -Syu
-RUN pacman -Sy bash git neofetch make python base-devel npm sudo
+RUN pacman -Sy bash git neofetch make python base-devel npm sudo --noconfirm
 
 #copy the entire source
 COPY . .
