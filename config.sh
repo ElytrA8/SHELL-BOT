@@ -1,6 +1,6 @@
-cat << EOF > config.json
-          {
-            "authToken": "$authToken",
-            "owner": $ownerID
-          }
-          EOF
+cat > config.json <<EOF
+{
+   "authToken": "$authToken",
+   "owner": $ownerID
+}
+EOF
