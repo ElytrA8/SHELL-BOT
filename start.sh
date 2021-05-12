@@ -1,3 +1,4 @@
+config() {
 echo "generating config.json"
 cat << EOF > config.json
           {
@@ -5,9 +6,19 @@ cat << EOF > config.json
             "owner": $ownerID
           }
           EOF
+}
 
+dependencies () {
 echo "installing dependencies"
 npm install
+}
 
+start() {
 echo "starting bot"
-mode server
+node server
+}
+
+echo "start"
+config
+dependencies
+start
