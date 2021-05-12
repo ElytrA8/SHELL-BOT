@@ -9,7 +9,8 @@ RUN apk add bash \
             git \
             neofetch \
             make \
-            python \
+            python3 \
+            py3-pip \
             make \
             automake \
             gcc \
