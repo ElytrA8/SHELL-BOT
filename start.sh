@@ -8,7 +8,7 @@ cat << EOF > config.json
           EOF
 }
 
-dependencies () {
+dependencies() {
 echo "installing dependencies"
 npm install
 }
