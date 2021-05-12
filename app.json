@@ -1,0 +1,26 @@
+{
+  "name": "Shell Bot",
+  "description": "A interactive Linux shell bot",
+  "logo": "https://telegra.ph/file/f58059c7976cbbb09a241.jpg",
+  "keywords": [
+    "telegram",
+    "bot",
+    "linux",
+    "shell",
+    "Interactive"
+  ],
+  "repository": "https://github.com/ElytrA8/shell-bot",
+  "website": "https://t.me/ElytrA8",
+  "success_url": "https://t.me/ElytrA8",
+  "stack": "container",
+  "env": {
+    "authToken": {
+      "description": "Telegram Bot Token",
+      "required": true
+    },
+    "ownerID": {
+      "description": "Telegram owner User id",
+      "required": true
+    }
+  }
+}
