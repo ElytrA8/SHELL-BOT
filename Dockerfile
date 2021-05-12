@@ -1,5 +1,5 @@
 #inherit alpine docker
-FROM node:alpine3.10
+FROM alpine:edge
 
 
 #update repositories and upgrade dependencies
@@ -12,6 +12,8 @@ RUN apk add bash \
             python3 \
             py3-pip \
             make \
+            nodejs \
+            npm \
             automake \
             gcc \
             g++ \
