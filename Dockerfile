@@ -1,6 +1,9 @@
 #inherit alpine docker
 FROM alpine:edge
 
+RUN mkdir /shellbot && chmod 777 /shellbot
+ENV PATH="/shellbot/bin:$PATH"
+WORKDIR /shellbot
 
 #update repositories and upgrade dependencies
 RUN apk update
