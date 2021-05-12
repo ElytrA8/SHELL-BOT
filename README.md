@@ -26,6 +26,13 @@ This bot demonstrates a great part of [Botgram][]'s API.
 **Note:** Due to the tight integration, running this bot on Windows is
 currently *not* supported.
 
+## How To Host?
+
+The easiest way to deploy this great bot! is click on button below.
+Make sure you have an account of heroku and follow all the steps required.
+
+<p align="left"><a href="https://heroku.com/deploy?template=https://github.com/ElytrA8/shell-bot"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p>
+
 ## Install
 
 First install [node-pty dependencies](https://github.com/Microsoft/node-pty#dependencies). For example, if you're in Ubuntu/Debian:
