@@ -20,5 +20,7 @@ RUN apk add bash \
 #copy the entire source
 COPY . .
 
-#run
-CMD ["bash","start.sh"]
+RUN npm install
+
+#finalization
+CMD ["bash","config.sh","&&","bash","start.sh"]
