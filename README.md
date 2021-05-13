@@ -102,7 +102,7 @@ node server
 [Botgram]: https://botgram.js.org
 [blog post]: https://alba.sh/blog/telegram-shell-bot/
 
-#Commands
+# Commands
 ```
 run - Execute command
 enter - Send input lines to command 
